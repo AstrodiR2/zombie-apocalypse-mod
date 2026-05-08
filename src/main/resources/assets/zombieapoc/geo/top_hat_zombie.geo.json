@@ -1,0 +1,50 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.top_hat_zombie",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 3.5,
+        "visible_bounds_offset": [0, 1.25, 0]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [0, 0, 0]
+        },
+        {
+          "name": "body",
+          "pivot": [0, 24, 0],
+          "parent": "root"
+        },
+        {
+          "name": "head",
+          "pivot": [0, 24, 0],
+          "parent": "body"
+        },
+        {
+          "name": "hat",
+          "pivot": [0, 24, 0],
+          "parent": "head",
+          "cubes": [
+            {
+              "comment": "Поля шляпи (широкий плаский куб)",
+              "origin": [-6, 24, -6],
+              "size": [12, 2, 12],
+              "uv": [0, 0]
+            },
+            {
+              "comment": "Верх шляпи (вузький високий куб)",
+              "origin": [-4, 26, -4],
+              "size": [8, 10, 8],
+              "uv": [0, 14]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
